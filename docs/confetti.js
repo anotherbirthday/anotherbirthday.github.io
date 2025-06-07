@@ -15,8 +15,7 @@ function fireworks() {
         }
 
         var particleCount = 50 * (timeLeft / duration);
-        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
-        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0, 1), y: Math.random() - 0.2 } });
     }, 250);
 }
 
@@ -35,14 +34,16 @@ function stars() {
             ...defaults,
             particleCount: 40,
             scalar: 1.2,
-            shapes: ['star']
+            shapes: ['star'],
+            origin: { x: Math.random(), y: Math.random() - 0.2 }
         });
 
         confetti({
             ...defaults,
             particleCount: 10,
             scalar: 0.75,
-            shapes: ['circle']
+            shapes: ['circle'],
+            origin: { x: Math.random(), y: Math.random() - 0.2 }
         });
     }
 
@@ -60,14 +61,14 @@ function fire() {
             particleCount: 2,
             angle: 60,
             spread: 55,
-            origin: { x: 0 },
+            origin: { x: Math.random(), y: Math.random() - 0.2 },
             colors: colors
         });
         confetti({
             particleCount: 2,
             angle: 120,
             spread: 55,
-            origin: { x: 1 },
+            origin: { x: Math.random(), y: Math.random() - 0.2 },
             colors: colors
         });
 
@@ -88,7 +89,8 @@ function emoji() {
         decay: 0.96,
         startVelocity: 20,
         shapes: [unicorn],
-        scalar
+        scalar,
+        origin: { x: Math.random(), y: Math.random() - 0.2 }
     };
 
     function shoot() {
