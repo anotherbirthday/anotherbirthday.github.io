@@ -1,4 +1,7 @@
 /* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playpen+Sans:wght@100..800&display=swap');
+
 .float{
     cursor: pointer;
 	width:120px;
@@ -44,4 +47,18 @@
 
 .page-navigation {
     margin-bottom: 1rem;
+}
+
+.highlight {
+    background-color: #dbfbff;
+    font-style: italic;
+}
+
+.comment {
+    background-color: #dbfbff;
+    font-family: "Caveat";
+    letter-spacing: 0.004em;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2em;
 }
