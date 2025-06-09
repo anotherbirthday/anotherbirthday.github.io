@@ -1,0 +1,78 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.home-text10 {
+  font-size: 52px;
+  margin-top: var(--dl-layout-space-fourunits);
+  font-family: "Merriweather";
+  margin-bottom: var(--dl-layout-space-fourunits);
+}
+ 
+.home-form {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text10 {
+    font-size: 52px;
+    margin-top: var(--dl-layout-space-fourunits);
+    font-family: Merriweather;
+    margin-bottom: var(--dl-layout-space-fourunits);
+  }
+  .home-text11 {
+    width: 90%;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .home-text10 {
+    font-size: 52px;
+    margin-top: var(--dl-layout-space-fourunits);
+    font-family: Merriweather;
+    margin-bottom: var(--dl-layout-space-fourunits);
+  }
+  .home-text11 {
+    width: 90%;
+    margin-top: var(--dl-layout-space-unit);
+  }
+  .home-form {
+    width: 332px;
+    height: 148px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .home-textinput {
+    align-self: center;
+    margin-bottom: 0px;
+    padding-bottom: 0.5rem;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .home-text10 {
+    font-size: 52px;
+    margin-top: var(--dl-layout-space-fourunits);
+    font-family: Merriweather;
+    margin-bottom: var(--dl-layout-space-fourunits);
+  }
+  .home-text11 {
+    width: 90%;
+    text-align: left;
+  }
+  .home-textinput {
+    margin-top: 0px;
+    text-align: left;
+    margin-bottom: var(--dl-layout-space-unit);
+  }
+}

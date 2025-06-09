@@ -130,3 +130,7 @@ document.getElementById('btnConfetti').addEventListener('click', function() {
     lastIndex = randomIndex;
     functions[randomIndex]();
 }); 
+
+document.addEventListener('DOMContentLoaded', function() {
+    fireworks(); // Вызов твоей функции
+});
