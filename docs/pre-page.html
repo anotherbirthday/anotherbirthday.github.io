@@ -98,8 +98,8 @@
 
     <script>
       function checkPassword() {
-          let password = document.getElementById("password").value;
-          if (password === "пароль") {
+          let password = document.getElementById("password").value.trim().toLowerCase();
+          if (password === "infinityexists") {
               window.location.href = "v25.html";
           } else {
               alert("Проверь, нет ли опечатки? Если всё ок, но всё равно появляется это окно, дай мне знать.");
